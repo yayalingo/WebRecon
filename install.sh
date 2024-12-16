@@ -26,6 +26,4 @@ go install github.com/tomnomnom/httprobe@latest
 # Install EyeWitness
 echo "Cloning and setting up EyeWitness..."
 git clone https://github.com/ChrisTruncer/EyeWitness.git
-cd EyeWitness || exit
-cd ..
 echo "Installation is complete."
