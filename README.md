@@ -36,5 +36,34 @@ This project is a comprehensive **subdomain enumeration** and **web reconnaissan
 - **Efficiency**: By using Go-based tools like **Subfinder** and **Httprobe**, along with the automation of EyeWitness, the project helps security professionals conduct faster reconnaissance and assessment of web assets.
 - **Usability**: The scripts are designed to be run with minimal user input, with the only requirement being the target domain name.
 
+Here are the two bash scripts (`install.sh` and `recon.sh`) based on the provided information:
+
+### 1. **`install.sh`** - To install the required tools (Go, Subfinder, Httprobe, and EyeWitness)
+### 2. **`recon.sh`** - To run reconnaissance for a given domain (Subfinder, Httprobe, and EyeWitness)
+
+### Instructions for Usage:
+
+1. **`install.sh`**:  
+   - This script will install Go, Subfinder, Httprobe, and EyeWitness.  
+   - Run the installation script first:
+     ```bash
+     bash install.sh
+     ```
+
+2. **`recon.sh`**:  
+   - After installing all necessary tools, you can use the `recon.sh` script to perform reconnaissance on any domain by providing the domain name as an argument:
+     ```bash
+     bash recon.sh <domain.com.au>
+     ```
+     This will:
+     - Discover subdomains using `subfinder`.
+     - Check live subdomains using `httprobe`.
+     - Take screenshots of the live subdomains using `EyeWitness`.
+
+### Notes:
+- Make sure that your system has Python 3.x installed, as **EyeWitness** requires Python to run.
+- You may need to adjust the Python path for **EyeWitness** if it's installed in a custom location.
+- `recon.sh` assumes EyeWitness is located at `/opt/EyeWitness/`, but you might need to adjust the path depending on where you cloned the repository.
+
 ### Conclusion:
 This project automates a crucial part of penetration testing by combining subdomain discovery, live probing, and web application enumeration into a streamlined workflow. It leverages **Subfinder**, **Httprobe**, and **EyeWitness** to quickly identify valuable targets and visually inspect them. It can be used by penetration testers and security researchers to conduct reconnaissance on web applications in a fast and organized manner.
