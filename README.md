@@ -67,3 +67,9 @@ Here are the two bash scripts (`install.sh` and `recon.sh`) based on the provide
 
 ### Conclusion:
 This project automates a crucial part of penetration testing by combining subdomain discovery, live probing, and web application enumeration into a streamlined workflow. It leverages **Subfinder**, **Httprobe**, and **EyeWitness** to quickly identify valuable targets and visually inspect them. It can be used by penetration testers and security researchers to conduct reconnaissance on web applications in a fast and organized manner.
+
+Reference :
+https://github.com/projectdiscovery/subfinder?tab=readme-ov-file
+https://docs.projectdiscovery.io/tools/subfinder/usage
+https://github.com/NilangaPerera/OSINT-Subdomain-Recon-Tool/tree/main
+https://github.com/owasp-amass/amass?tab=readme-ov-file
