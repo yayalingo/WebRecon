@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Install Go
+# Install the latest version of Go (Go 1.23.4)
 echo "Installing Go..."
-wget https://go.dev/dl/go1.20.7.linux-amd64.tar.gz -O /tmp/go1.20.7.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvzf /tmp/go1.20.7.linux-amd64.tar.gz
-rm /tmp/go1.20.7.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz -O /tmp/go1.23.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvzf /tmp/go1.23.4.linux-amd64.tar.gz
+rm /tmp/go1.23.4.linux-amd64.tar.gz
 
 # Add Go binary path to .bashrc
 echo "Adding Go to PATH..."
@@ -26,4 +26,6 @@ go install github.com/tomnomnom/httprobe@latest
 # Install EyeWitness
 echo "Cloning and setting up EyeWitness..."
 git clone https://github.com/ChrisTruncer/EyeWitness.git
+cd EyeWitness || exit
+cd ..
 echo "Installation is complete."
