@@ -31,15 +31,6 @@ This project is a comprehensive **subdomain enumeration** and **web reconnaissan
      2. **Probing for Live Subdomains**: Uses **Httprobe** to check which of these subdomains are live (respond to HTTP/HTTPS).
      3. **Screenshot Capture**: Uses **EyeWitness** to take screenshots of the live subdomains, providing a visual representation of the web services.
 
-### Key Features:
-- **Automation**: The `recon.sh` script automates the entire process from subdomain enumeration to live status probing and web screenshot capture.
-- **Efficiency**: By using Go-based tools like **Subfinder** and **Httprobe**, along with the automation of EyeWitness, the project helps security professionals conduct faster reconnaissance and assessment of web assets.
-- **Usability**: The scripts are designed to be run with minimal user input, with the only requirement being the target domain name.
-
-Here are the two bash scripts (`install.sh` and `recon.sh`) based on the provided information:
-
-### 1. **`install.sh`** - To install the required tools (Go, Subfinder, Httprobe, and EyeWitness)
-### 2. **`recon.sh`** - To run reconnaissance for a given domain (Subfinder, Httprobe, and EyeWitness)
 
 ### Instructions for Usage:
 
@@ -65,11 +56,12 @@ Here are the two bash scripts (`install.sh` and `recon.sh`) based on the provide
 - You may need to adjust the Python path for **EyeWitness** if it's installed in a custom location.
 - `recon.sh` assumes EyeWitness is located at `/opt/EyeWitness/`, but you might need to adjust the path depending on where you cloned the repository.
 
-### Conclusion:
-This project automates a crucial part of penetration testing by combining subdomain discovery, live probing, and web application enumeration into a streamlined workflow. It leverages **Subfinder**, **Httprobe**, and **EyeWitness** to quickly identify valuable targets and visually inspect them. It can be used by penetration testers and security researchers to conduct reconnaissance on web applications in a fast and organized manner.
-
 Reference :
+
 https://github.com/projectdiscovery/subfinder?tab=readme-ov-file
+
 https://docs.projectdiscovery.io/tools/subfinder/usage
+
 https://github.com/NilangaPerera/OSINT-Subdomain-Recon-Tool/tree/main
+
 https://github.com/owasp-amass/amass?tab=readme-ov-file
